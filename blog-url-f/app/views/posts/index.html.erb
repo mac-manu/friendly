@@ -19,6 +19,8 @@
           <td><%= post.description %></td>
           <td><%= link_to 'Show', post %></td>
           <td><%= link_to 'Edit', edit_post_path(post) %></td>
+          <!-- Standard button -->
+<button type="button" class="btn btn-default">Default</button>
           <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
       <% end %>
