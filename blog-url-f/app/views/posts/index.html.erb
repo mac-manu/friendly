@@ -1,14 +1,14 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Listing Posts</h1>
-<div class="container">
-    
+<div class="container-fluid">
+    <p id="notice"><%= notice %></p>
+
+    <h1>Listing Posts</h1>
     <table class="table table-bordered">
     <thead>
       <tr>
         <th>Title</th>
         <th>Description</th>
-        <th colspan="3"></th>
+        <th></th>
       </tr>
     </thead>
 
@@ -17,18 +17,17 @@
         <tr>
           <td><%= post.title %></td>
           <td><%= post.description %></td>
-          <td><%= link_to 'Show', post %></td>
-          <td><%= link_to 'Edit', edit_post_path(post) %></td>
-          <!-- Standard button -->
-<button type="button" class="btn btn-default">Default</button>
-          <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= link_to 'Show', post, class: 'btn btn-primary btn-xs' %></td>
+          <td><%= link_to 'Edit', edit_post_path(post), class: 'btn btn-info btn-xs' %></td>
+          <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-xs' %></td>
         </tr>
       <% end %>
     </tbody>
   </table>
+  <%= link_to 'New Post', new_post_path, class: 'btn' %>
+
 </div>
 
 
 <br>
 
-<%= link_to 'New Post', new_post_path %>
