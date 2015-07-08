@@ -2,17 +2,39 @@
 
 
 
-<div class="container">
-		<p>
-		  <strong>Title:</strong>
-		  <%= @post.title %>
-		</p>
+<div class="container-fluid">
+			<table class="table table-bordered">
+	    <thead>
+	      
+	       
+	    </thead>
 
-		<p>
-		  <strong>Description:</strong>
-		  <%= @post.description.html_safe %>
-		</p>
+	    <tbody>
+	      
+	        <tr>
+	          
+	          <td>
+				<p>
+			  <strong>Title:</strong>
+			  <%= @post.title %>
+			</p>
 
-		<%= link_to 'Edit', edit_post_path(@post), class:"btn" %> |
-		<%= link_to 'Back', posts_path, class:"btn" %>
+			<p>
+			  <strong>Description:</strong>
+			  <%= @post.description.html_safe %>
+			</p>
+
+			
+
+	          </td>
+	        </tr>
+	        <tr>
+		        <td>
+		        	<%= link_to 'Edit', edit_post_path(@post), class: 'btn btn-info btn-xs' %> |
+					<%= link_to 'Back', posts_path, class:"btn" %>	
+		        </td>
+	      	</tr>
+	    </tbody>
+	  </table>
+			
 </div>
