@@ -21,3 +21,11 @@
 
 en:
   hello: "Hello world"
+  title: "Post titles !"
+  titulo: "Title"
+  description: "description"
+es:
+  hello: "Hola Mundo"
+  title: "Posting titulos !"
+  titulo: "Titulo"
+  description: "descripcion"
